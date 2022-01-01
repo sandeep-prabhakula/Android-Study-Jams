@@ -1,11 +1,14 @@
+#Android-study-jams
 College notices to all
 
 Problem Statement:
+
 Sometimes students may not get notified about some events and occasions conducting in the college, and some events are more precious for some students.
 Students might lose their opportunities due to some miscommunications which may leave the regret throughout their life.
 Technology plays a major role in day-to-day life and can make great alterations in these situations out of all technologies. Mobile app can be effectively used in this situation.
 
 Proposed Solution:
+
 This app proposes a “Notices notifying system” to keep an eye over the events and circulars happening in the college. Here anyone can post their views and also can forward the news known to one. The notices get updated in the app in realtime.
 
 ![](Screenshots/allScreenShots.png)
