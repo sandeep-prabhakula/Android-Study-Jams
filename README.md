@@ -1,4 +1,4 @@
-#Android-study-jams
+#Android-Study-Jams
 
 College notices to all
 
