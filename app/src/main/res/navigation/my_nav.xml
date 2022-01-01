@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/loginFragmnet">
+    <fragment
+        android:id="@+id/loginFragmnet"
+        android:name="com.sandeepprabhakula.collegenoticesapp.LoginFragmnet"
+        android:label="fragment_login_fragmnet"
+        tools:layout="@layout/fragment_login_fragmnet" >
+        <action
+            android:id="@+id/action_loginFragmnet_to_noticesFragment"
+            app:destination="@id/noticesFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/noticesFragment"
+        android:name="com.sandeepprabhakula.collegenoticesapp.NoticesFragment"
+        android:label="fragment_notices"
+        tools:layout="@layout/fragment_notices" >
+        <action
+            android:id="@+id/action_noticesFragment_to_newNoticeFragment"
+            app:destination="@id/newNoticeFragment"
+            app:popUpTo="@id/noticesFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_noticesFragment_to_loginFragmnet"
+            app:destination="@id/loginFragmnet"
+            app:popUpTo="@id/noticesFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/newNoticeFragment"
+        android:name="com.sandeepprabhakula.collegenoticesapp.NewNoticeFragment"
+        android:label="fragment_new_notice"
+        tools:layout="@layout/fragment_new_notice" >
+        <action
+            android:id="@+id/action_newNoticeFragment_to_noticesFragment"
+            app:destination="@id/noticesFragment"
+            app:popUpTo="@id/newNoticeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

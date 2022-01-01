@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "689406467557",
+    "project_id": "collegenoticesapp",
+    "storage_bucket": "collegenoticesapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689406467557:android:d9b76b8d50e0a73288230c",
+        "android_client_info": {
+          "package_name": "com.sandeepprabhakula.collegenoticesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689406467557-ht6p682tt0qbalv8iek0bjidmugrqvco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh55bv3tvDgUSsYf32mlUhgaN8xoAhrYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689406467557-ht6p682tt0qbalv8iek0bjidmugrqvco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
