@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
@@ -64,5 +65,14 @@ class NoticesFragment : Fragment(),IPostAdapter {
 
     override fun onLikeClicked(postId: String) {
         postDao.updateLikes(postId)
+    }
+
+    override fun onSendClicked(postId: String, comment: String) {
+        postDao.uploadComments(postId,comment)
+    }
+
+    override fun onClickDeleted(postId: String,uid:String) {
+        postDao.deletePost(postId,uid)
+        Toast.makeText(activity,"post deleted",Toast.LENGTH_SHORT).show()
     }
 }

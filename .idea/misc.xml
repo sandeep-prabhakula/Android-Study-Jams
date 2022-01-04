@@ -3,16 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.175" />
         <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/drawable/ic_liked.xml" value="0.175" />
         <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/drawable/ic_unliked.xml" value="0.175" />
         <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/drawable/notice_board_bg.xml" value="0.175" />
         <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/layout/activity_main.xml" value="0.1546875" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/layout/comments_layout.xml" value="0.25" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/layout/fragment_comments.xml" value="0.1546875" />
         <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/layout/fragment_login.xml" value="0.1546875" />
         <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/layout/fragment_login_fragmnet.xml" value="0.1546875" />
         <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/layout/fragment_new_notice.xml" value="0.25" />
-        <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/layout/fragment_notices.xml" value="0.25" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/layout/fragment_notices.xml" value="0.1546875" />
         <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/layout/fragment_splash_screen.xml" value="0.1546875" />
-        <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/layout/notice_item.xml" value="0.25" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/layout/notice_item.xml" value="0.5" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/menu/logout_menu.xml" value="0.10833333333333334" />
+        <entry key="..\:/Users/prabh/AndroidStudioProjects/CollegeNoticesApp/app/src/main/res/menu/menu.xml" value="0.33" />
+        <entry key="..\:/Users/prabh/AppData/Local/Android/Sdk/platforms/android-31/data/res/drawable/ic_lock_power_off.xml" value="0.175" />
       </map>
     </option>
   </component>

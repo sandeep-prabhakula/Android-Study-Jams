@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="8dp"
@@ -67,9 +68,79 @@
             app:layout_constraintLeft_toRightOf="@id/likeButton"
             app:layout_constraintTop_toTopOf="@id/likeButton"
             android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            app:layout_constraintRight_toLeftOf="@id/comment"
             app:layout_constraintBottom_toBottomOf="@id/likeButton" />
+
+        <ImageView
+            android:id="@+id/comment"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintLeft_toRightOf="@id/likeCount"
+            app:layout_constraintBottom_toBottomOf="@id/likeCount"
+            app:layout_constraintTop_toTopOf="@id/likeCount"
+            />
+
+        <ImageView
+            android:id="@+id/deletePost"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@android:drawable/ic_menu_delete"
+            app:layout_constraintRight_toRightOf="@id/postTitle"
+            app:layout_constraintTop_toBottomOf="@id/postTitle"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/commentSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/likeButton">
+
+            <EditText
+                android:id="@+id/writeComment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="write a comment"
+                android:inputType="textPersonName"
+                android:minHeight="68dp"
+                android:padding="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/sendComment"
+                app:layout_constraintTop_toBottomOf="@id/postComments" />
+
+            <TextView
+                android:id="@+id/sendComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:text="Post"
+                android:textColor="#2D6FEA"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/writeComment"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/postComments" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/postComments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@id/writeComment"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.cardview.widget.CardView>
+
