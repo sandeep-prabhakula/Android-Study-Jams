@@ -13,6 +13,7 @@ class CommentsAdapter(private val list:ArrayList<Comments>): RecyclerView.Adapte
     class CommentsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val commentatorImage:ImageView = itemView.findViewById(R.id.commentatorImage)
         val commentatorId:TextView = itemView.findViewById(R.id.commentatorId)
+        val commentPostedAt:TextView = itemView.findViewById(R.id.commentPostedAt)
         val commentatorComment:TextView = itemView.findViewById(R.id.commentatorComment)
     }
 
@@ -25,6 +26,7 @@ class CommentsAdapter(private val list:ArrayList<Comments>): RecyclerView.Adapte
     override fun onBindViewHolder(holder: CommentsViewHolder, position: Int) {
         val model = list[position]
         holder.commentatorId.text = model.commentatorId
+        holder.commentPostedAt.text = Utils.getTimeAgo(model.commentPostedAt)
         Glide.with(holder.commentatorImage.context).load(model.commentatorImageURL).circleCrop().into(holder.commentatorImage)
         holder.commentatorComment.text = model.commentatorComment
     }

@@ -1,6 +1,5 @@
 package com.sandeepprabhakula.collegenoticesapp.daos
 
-import android.util.Log
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.DocumentSnapshot
@@ -51,7 +50,8 @@ class PostDao {
         GlobalScope.launch {
             val currentUserId = auth.currentUser!!.uid
             val post = getPostById(postId).await().toObject(Post::class.java)!!
-            post.comments.add(Comments(auth.currentUser!!.displayName.toString(),comment,auth.currentUser!!.photoUrl.toString()))
+            val currentTime = System.currentTimeMillis()
+            post.comments.add(Comments(auth.currentUser!!.displayName.toString(),comment,auth.currentUser!!.photoUrl.toString(),currentTime))
             postCollection.document(postId).set(post)
         }
     }

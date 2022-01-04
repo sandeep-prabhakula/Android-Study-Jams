@@ -16,7 +16,6 @@ import com.firebase.ui.firestore.FirestoreRecyclerAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import com.sandeepprabhakula.collegenoticesapp.models.Comments
 import com.sandeepprabhakula.collegenoticesapp.models.Post
 
 class PostAdapter(options: FirestoreRecyclerOptions<Post>, private val listener:IPostAdapter) :FirestoreRecyclerAdapter<Post,PostAdapter.PostViewHolder>(
@@ -51,9 +50,6 @@ class PostAdapter(options: FirestoreRecyclerOptions<Post>, private val listener:
             }else{
                 Toast.makeText(it.context,"Empty Comment!!",Toast.LENGTH_SHORT).show()
             }
-        }
-        viewHolder.comment.setOnClickListener {
-            listener.onLikeClicked(snapshots.getSnapshot(viewHolder.adapterPosition).id)
         }
         viewHolder.deletePost.setOnClickListener {
             listener.onClickDeleted(snapshots.getSnapshot(viewHolder.adapterPosition).id,user?.uid.toString())

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="16dp"
@@ -29,9 +30,22 @@
         app:layout_constraintLeft_toRightOf="@id/commentatorImage"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/commentatorId"
-        android:id="@+id/commentatorComment"
+        android:id="@+id/commentPostedAt"
         android:textSize="16sp"
         android:layout_marginLeft="12dp"
-        android:layout_marginTop="4dp"
-        android:textColor="#212121" />
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/commentatorComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:textColor="#212121"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/commentPostedAt"
+        tools:ignore="SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
