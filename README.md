@@ -1,4 +1,4 @@
-#Android-Study-Jams
+# Android-Study-Jams
 
 College notices to all
 
@@ -31,6 +31,6 @@ Functionality & Concepts used:
 
 Application Link & Future Scope :
 
-The app is currently in the testing phase with CVR College of Engineering with a limited no. of users, You can access the app : https://drive.google.com/file/d/1tvK0Cas29Ewo8YvOPcccBA8R4FBnkivm/view?usp=sharing
+The app is currently in the testing phase with CVR College of Engineering with a limited no. of users, You can access the app : https://drive.google.com/file/d/1LEZkM84Zzeex90DgrOMUZgoQyuwm5Wus/view?usp=sharing
 
 Once the app is fully tested and functional in CVR College of Engineering, we plan to talk to neighboring colleges also to propose this app idea and collaborate with them on this.
