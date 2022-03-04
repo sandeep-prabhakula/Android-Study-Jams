@@ -48,7 +48,7 @@ class PostDao {
 
     fun uploadComments(postId:String,comment:String){
         GlobalScope.launch {
-            val currentUserId = auth.currentUser!!.uid
+            auth.currentUser!!.uid
             val post = getPostById(postId).await().toObject(Post::class.java)!!
             val currentTime = System.currentTimeMillis()
             post.comments.add(Comments(auth.currentUser!!.displayName.toString(),comment,auth.currentUser!!.photoUrl.toString(),currentTime))
