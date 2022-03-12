@@ -17,13 +17,7 @@
         android:id="@+id/noticesFragment"
         android:name="com.sandeepprabhakula.collegenoticesapp.NoticesFragment"
         android:label="fragment_notices"
-        tools:layout="@layout/fragment_notices" >
-        <action
-            android:id="@+id/action_noticesFragment_to_newNoticeFragment"
-            app:destination="@id/newNoticeFragment"
-            app:popUpTo="@id/noticesFragment"
-            app:popUpToInclusive="false" />
-    </fragment>
+        tools:layout="@layout/fragment_notices" />
     <fragment
         android:id="@+id/newNoticeFragment"
         android:name="com.sandeepprabhakula.collegenoticesapp.NewNoticeFragment"

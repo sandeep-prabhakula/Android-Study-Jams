@@ -5,6 +5,10 @@
         android:title="Notice Board"
         android:icon="@drawable/ic_baseline_notifications_24"/>
     <item
+        android:id="@+id/newNoticeFragment"
+        android:title="Add Notice"
+        android:icon="@drawable/ic_baseline_add_circle_24"/>
+    <item
         android:id="@+id/userProfile"
         android:title="User Profile"
         android:icon="@drawable/ic_baseline_person_24"/>
