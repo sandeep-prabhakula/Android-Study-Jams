@@ -27,21 +27,10 @@ class NoticesFragment : Fragment(),IPostAdapter {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_notices, container, false)
-        val createNewPost:FloatingActionButton = view.findViewById(R.id.createNewNotice)
         notices = view.findViewById(R.id.notices)
         setUpRecyclerView()
-        createNewPost.setOnClickListener{
-            findNavController().navigate(R.id.action_noticesFragment_to_newNoticeFragment)
-        }
-        val logout:ImageButton = view.findViewById(R.id.logout)
-        val auth = FirebaseAuth.getInstance()
-        logout.setOnClickListener {
-            val user = auth.currentUser
-            if(user!=null){
-                auth.signOut()
-                Navigation.findNavController(view).navigate(R.id.action_noticesFragment_to_loginFragmnet)
-            }
-        }
+
+        FirebaseAuth.getInstance()
         return view
     }
     private fun setUpRecyclerView(){

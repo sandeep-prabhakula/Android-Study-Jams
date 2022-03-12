@@ -11,8 +11,7 @@
         tools:layout="@layout/fragment_login_fragmnet" >
         <action
             android:id="@+id/action_loginFragmnet_to_noticesFragment"
-            app:destination="@id/noticesFragment"
-            app:popUpToInclusive="false" />
+            app:destination="@id/noticesFragment" />
     </fragment>
     <fragment
         android:id="@+id/noticesFragment"
@@ -24,11 +23,6 @@
             app:destination="@id/newNoticeFragment"
             app:popUpTo="@id/noticesFragment"
             app:popUpToInclusive="false" />
-        <action
-            android:id="@+id/action_noticesFragment_to_loginFragmnet"
-            app:destination="@id/loginFragmnet"
-            app:popUpTo="@id/noticesFragment"
-            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/newNoticeFragment"
@@ -39,6 +33,17 @@
             android:id="@+id/action_newNoticeFragment_to_noticesFragment"
             app:destination="@id/noticesFragment"
             app:popUpTo="@id/newNoticeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfile"
+        android:name="com.sandeepprabhakula.collegenoticesapp.UserProfile"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userProfile_to_loginFragmnet2"
+            app:destination="@id/loginFragmnet"
+            app:popUpTo="@id/userProfile"
             app:popUpToInclusive="true" />
     </fragment>
 </navigation>
