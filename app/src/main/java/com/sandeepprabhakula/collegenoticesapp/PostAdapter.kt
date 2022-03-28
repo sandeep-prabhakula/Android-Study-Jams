@@ -41,18 +41,18 @@ class PostAdapter(options: FirestoreRecyclerOptions<Post>, private val listener:
         val user = auth.currentUser
         val viewHolder =  PostViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.notice_item, parent, false))
         viewHolder.likeButton.setOnClickListener{
-            listener.onLikeClicked(snapshots.getSnapshot(viewHolder.adapterPosition).id)
+            listener.onLikeClicked(snapshots.getSnapshot(viewHolder.absoluteAdapterPosition).id)
         }
         viewHolder.sendComment.setOnClickListener {
             if(viewHolder.writeComment.text.isNotEmpty()){
-                listener.onSendClicked(snapshots.getSnapshot(viewHolder.adapterPosition).id,viewHolder.writeComment.text.toString())
+                listener.onSendClicked(snapshots.getSnapshot(viewHolder.absoluteAdapterPosition).id,viewHolder.writeComment.text.toString())
                 viewHolder.writeComment.text.clear()
             }else{
                 Toast.makeText(it.context,"Empty Comment!!",Toast.LENGTH_SHORT).show()
             }
         }
         viewHolder.deletePost.setOnClickListener {
-            listener.onClickDeleted(snapshots.getSnapshot(viewHolder.adapterPosition).id,user?.uid.toString())
+            listener.onClickDeleted(snapshots.getSnapshot(viewHolder.absoluteAdapterPosition).id,user?.uid.toString())
         }
         return viewHolder
     }

@@ -47,8 +47,8 @@ class NoticesFragment : Fragment(),IPostAdapter {
         adapter.startListening()
     }
 
-    override fun onStop() {
-        super.onStop()
+    override fun onDestroy() {
+        super.onDestroy()
         adapter.stopListening()
     }
 
