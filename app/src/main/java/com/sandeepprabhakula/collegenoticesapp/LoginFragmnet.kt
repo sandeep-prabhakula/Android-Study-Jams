@@ -38,7 +38,7 @@ class LoginFragmnet : Fragment() {
         val googleSignIn :SignInButton
         googleSignIn = view.findViewById(R.id.googleSignIn);
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken("689406467557-ht6p682tt0qbalv8iek0bjidmugrqvco.apps.googleusercontent.com")
+            .requestIdToken(BuildConfig.ADMIN_UID)
             .requestEmail()
             .build()
         mAuth = FirebaseAuth.getInstance()
